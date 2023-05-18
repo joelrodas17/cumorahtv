@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="container_main">
+    <div class="container__title">
+      <a><img  width="10%" src="img/logo_video.png" alt=""></a>
+    </div>
+    <div class="grid_container">
+      <div class="child_grid">
+        <a onclick="iraVideo(1)"><img width="400em" src="img/otroladodelcielo2.jpg" alt=""></a>
+        <p>Al otro lado del Cielo 2</p>
+      </div>
+      <div class="child_grid">
+        <a onclick="iraVideo(2)"><img width="400em" src="img/otroladodelcielo1.png" alt=""></a>
+        <p>Al otro lado del Cielo 1</p>
+      </div>
+      <div class="child_grid">
+        <a onclick="iraVideo(3)"><img width="400em" src="img/mostervsmormones.png" alt=""></a>
+        <p>Gangster vs Mormones</p>
+      </div>
+      <div class="child_grid">
+        <a onclick="iraVideo(4)"><img width="400em" src="img/charlie.png" alt=""></a>
+        <p>Charly(2002)</p>
+      </div>
+
+      <div class="child_grid">
+        <a onclick="iraVideo(5)"><img width="400em" src="img/therm.png" alt=""></a>
+        <p>El misionero retornado</p>
+      </div>
+      <div class="child_grid">
+        <a onclick="iraVideo(6)"><img width="400em" src="img/recadodeangeles.png" alt=""></a>
+        <p>Recado de Angeles(2008)</p>
+      </div>
+      <div class="child_grid">
+        <a onclick="iraVideo(7)"><img width="400em" src="img/kenedihadson.png" alt=""></a>
+        <p>Con amor, Kennedy(2017)</p>
+      </div>
+      <div class="child_grid">
+        <a onclick="iraVideo(8)"><img width="400em" src="img/tesorodehombre.png" alt=""></a>
+        <p>El tesoro de un hombre(2009)</p>
+      </div>
+
+    </div>
+  </div>
+  
+  <div class="container" id="container_video" style="display: none;">
+    <div class="container__title">
+      <a href="index.html"><img  width="10%" src="img/logo_video.png" alt=""></a>
+    </div>
+    <div class="container__descripcion" id="con_description">
+      
+    </div>
+    <div id="play" class="boton" onclick="muestravideo()">
+    </div>
+    <div class="container_video">
+      
+      <div class="video">
+        <div id="fondo" class="fondo"></div>
+        <iframe id="iframe" width="1198" height="674" src="https://www.youtube.com/embed/1Jt_RQghpLU?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      
+    </div>
+  </div>
+  <script src="video.js"></script>
+</body>
+</html>
