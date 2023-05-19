@@ -7,10 +7,8 @@ function iraVideo(indice){
   document.getElementById("container_video").style.display="";
   ancho = window.innerWidth;
   alto = window.innerHeight;
-  altoIframe = alto - 150;
-  anchoIframe = ancho - 95;
-  console.log(anchoIframe);
-  console.log(altoIframe);
+  altoIframe = alto - 30;
+  anchoIframe = ancho - 105;
   document.getElementById("iframe").width = anchoIframe;
   document.getElementById("iframe").height = altoIframe;
   switch(indice){
