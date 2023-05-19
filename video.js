@@ -48,3 +48,14 @@ function iraVideo(indice){
         alert("No existe la pelicula");
   }
 }
+play.addEventListener('click', function() {
+        if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) { // Para Firefox
+          iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) { // Para Chrome, Safari y Opera
+          iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) { // Para Internet Explorer y Edge
+          iframe.msRequestFullscreen();
+        }
+});
