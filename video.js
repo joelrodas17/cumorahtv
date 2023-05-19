@@ -5,6 +5,13 @@ function muestravideo(){
 function iraVideo(indice){
   document.getElementById("container_main").style.display="none";
   document.getElementById("container_video").style.display="";
+  ancho = window.innerWidth;
+  alto = window.innerHeight;
+  altoIframe = alto - 250;
+  anchoIframe = ancho - 95;
+  console.log(anchoIframe);
+  document.getElementById("iframe").width = anchoIframe;
+  document.getElementById("iframe").height = altoIframe;
   switch(indice){
     case 1: 
             document.getElementById("fondo").style.backgroundImage = 'url("img/otroladodelcielo2.jpg")';

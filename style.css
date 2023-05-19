@@ -37,6 +37,7 @@ h1{
   display: grid;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10%;
 }
 
 .video{
