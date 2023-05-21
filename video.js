@@ -1,6 +1,5 @@
 function muestravideo(){
   document.getElementById("play").style.display="none";
-  document.getElementById("fondo").style.display="none";
 }
 function iraVideo(indice){
   document.getElementById("container_main").style.display="none";
@@ -10,7 +9,9 @@ function iraVideo(indice){
   altoIframe = alto - 30;
   anchoIframe = ancho - 105;
   document.getElementById("iframe").width = anchoIframe;
-  document.getElementById("iframe").height = altoIframe;
+  document.getElementById("reproducir").width = anchoIframe
+  document.getElementById("iframe").height = anchoIframe / 2;
+  document.getElementById("reproducir").height = anchoIframe / 2;  
   switch(indice){
     case 1: 
             break;

@@ -6,9 +6,6 @@ html,body{
 h1{
   margin: 0;
 }
-#reproducir{
-  display: none;
-}
 .container{
   background: rgb(8, 15, 40);
   width: 100%;
@@ -49,6 +46,11 @@ h1{
   justify-content: center;
   align-items: center;
 }
+.fondo{
+  position: absolute;
+  z-index: 1000;
+  max-height: 690px;
+}
 .boton{
   position: absolute;
   width: 10em;
@@ -61,15 +63,16 @@ h1{
   z-index: 31110;
   cursor: pointer;
 }
+#iframe{
+  max-height: 690px;
+}
 @media screen and (max-width: 1760px) {
   .grid_container{
     grid-template-columns: auto auto auto;
   }
 }
 @media screen and (min-width:879px) and (max-width: 1319px) {
-  .grid_container{
-    grid-template-columns: auto auto;
-  }
+  
   .container{
     height: 100%;
     padding-bottom: 3em;
@@ -82,19 +85,6 @@ h1{
   .container{
     height: 100%;
     padding-bottom: 3em;
-  }
-  #reproducir{
-    background: #000000;
-    box-shadow: 3px 2px 5px 5px rgb(0, 95, 142);
-    color: white;
-    border: none;
-    padding:1em;
-    font-size: 1em;
-    z-index: 10000;
-    display: block;
-    border-radius: 0.5em;
-    margin-top: 1.5em;
-    cursor: pointer;
   }
   #iframe{
     height: 20rem;
