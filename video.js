@@ -45,6 +45,10 @@ function iraVideo(indice){
             
             document.getElementById("iframe").src = "https://www.youtube.com/embed/dHdeMsutk1Y?start=5";
             break;
+    case 9:
+
+            document.getElementById("iframe").src = "https://www.youtube.com/embed/GN7Tccr0Nc8?start=3";
+            break;
     default:
         alert("No existe la pelicula");
   }
