@@ -14,9 +14,10 @@ function iraVideo(indice){
   document.getElementById("reproducir").height = anchoIframe / 2;  
   switch(indice){
     case 1: 
+            document.getElementById("reproducir").src = "img/otroladodelcielo2fondo.png";
             break;
     case 2:
-        
+            document.getElementById("reproducir").src = "img/otroladodelcielo1fondo.png";    
             document.getElementById("iframe").src = "https://www.youtube.com/embed/i9RuCJTevnc?start=5";
             break;
     case 3: 
@@ -25,7 +26,7 @@ function iraVideo(indice){
             break;
             break;
     case 4:
-           
+            document.getElementById("reproducir").src = "img/charliefondo.png";
             document.getElementById("iframe").src = "https://www.youtube.com/embed/2l6m5NQHM3A?start=4";
             break;
     case 5: 
@@ -33,11 +34,11 @@ function iraVideo(indice){
             document.getElementById("iframe").src = "https://www.youtube.com/embed/93htaSyBlwg";
             break;
     case 6:
-           
+            document.getElementById("reproducir").src = "img/recadodeangelesfondo.png";
             document.getElementById("iframe").src = "https://www.youtube.com/embed/r4ljBABcEZk?start=5";
             break;
     case 7:
-           
+            document.getElementById("reproducir").src = "img/kenedihadsonfondo.png";
             document.getElementById("iframe").src = "https://www.youtube.com/embed/YC105Z4MCrs?start=2";
             break;
     case 8:
@@ -60,3 +61,8 @@ reproducir.addEventListener('click', function() {
           iframe.msRequestFullscreen();
         }
 });
+window.addEventListener('load', function() {
+  document.getElementById("carga").style.display="none";
+  document.getElementById("container_main").style.display="";
+});
+      

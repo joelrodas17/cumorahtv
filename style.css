@@ -6,6 +6,30 @@ html,body{
 h1{
   margin: 0;
 }
+#carga{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  text-align: center;
+  height: 100vh;
+}
+#logo_main{
+  position: absolute;
+  z-index: 10000000000;
+}
+#logo_carga{
+  animation: girar-infinito 2s linear infinite;
+}
+@keyframes girar-infinito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .container{
   background: rgb(8, 15, 40);
   width: 100%;
